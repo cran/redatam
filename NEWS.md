@@ -1,3 +1,13 @@
+# redatam 2.0.2
+
+* I created a repo with all the datasets. Until my PR to cpp11 is accepted,
+  this will not pass the CRAN checks, so I removed all the compiled code
+  and provided a function to download the datasets from the repo.
+
+# redatam 2.0.1
+
+* Fixes memory leaks warned by CRAN on clang-ASAN and gcc-UBSAN.
+
 # redatam 2.0.0
 
 * First CRAN release.
