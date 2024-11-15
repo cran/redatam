@@ -1,12 +1,10 @@
-# redatam 2.0.2
-
-* I created a repo with all the datasets. Until my PR to cpp11 is accepted,
-  this will not pass the CRAN checks, so I removed all the compiled code
-  and provided a function to download the datasets from the repo.
-
 # redatam 2.0.1
 
-* Fixes memory leaks warned by CRAN on clang-ASAN and gcc-UBSAN.
+* Refactored C++ to R list casting to avoid growing a list in a loop. It now
+  creates a list with a lenght equal to the number of entities and variables
+  with descriptions and then fills it with the data. This is 3 to 5 times
+  faster.
+* Fixes GCC-SAN errors with a fix proposed by Ivan Krylov. Thanks!
 
 # redatam 2.0.0
 

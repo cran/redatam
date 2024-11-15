@@ -5,14 +5,33 @@ knitr::opts_chunk$set(
 )
 
 ## ----download, eval = FALSE---------------------------------------------------
+#  url <- "https://redatam.org/cdr/descargas/censos/poblacion/CP2017CHL.zip"
+#  zip <- "CP2017CHL.zip"
+#  
+#  if (!file.exists(zip)) {
+#    download.file(url, zip, method = "wget")
+#  }
+
+## ----extract, eval = FALSE----------------------------------------------------
+#  # install.packages("archive")
+#  dout <- basename(zip)
+#  dout <- sub("\\.zip$", "", dout)
+#  archive::archive_extract(zip, dir = dout)
+
+## ----read_dic, eval = FALSE---------------------------------------------------
 #  library(redatam)
 #  
-#  download_microdata()
+#  fout <- "chile2017.rds"
+#  
+#  if (!file.exists(fout)) {
+#    chile2017 <- read_redatam("CP2017CHL/BaseOrg16/CPV2017-16.dicx")
+#    saveRDS(chile2017, fout)
+#  } else {
+#    chile2017 <- readRDS(fout)
+#  }
 
 ## ----eval = FALSE-------------------------------------------------------------
 #  library(dplyr)
-#  
-#  chile2017 <- readRDS("/tmp/RtmpLdDUa5/CHILE2017.rds")
 #  
 #  overcrowding <- chile2017$comuna %>%
 #    select(ncomuna, comuna_ref_id) %>%

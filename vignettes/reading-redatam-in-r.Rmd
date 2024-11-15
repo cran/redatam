@@ -14,16 +14,45 @@ knitr::opts_chunk$set(
 )
 ```
 
-We start by downloading the Chilean Census 2017 from GitHub:
+We start by downloading the Chilean Census 2017 from ECLAC website (link valid
+as of 2024-10-01):
 
 ```{r download, eval = FALSE}
+url <- "https://redatam.org/cdr/descargas/censos/poblacion/CP2017CHL.zip"
+zip <- "CP2017CHL.zip"
+
+if (!file.exists(zip)) {
+  download.file(url, zip, method = "wget")
+}
+```
+
+Now we can extract the files:
+
+```{r extract, eval = FALSE}
+# install.packages("archive")
+dout <- basename(zip)
+dout <- sub("\\.zip$", "", dout)
+archive::archive_extract(zip, dir = dout)
+```
+
+You can use `unzip()` from base R, but this file in particular gave me an
+error. The `archive` package is a wrapper around 'libarchive' that provides
+multi-format archive and compression support.
+
+The REDATAM files are now stored in the `CP2017CHL` directory. We can read the
+REDATAM dictionary file (DIC or DICX for this particular case):
+
+```{r read_dic, eval = FALSE}
 library(redatam)
 
-download_microdata()
-```
+fout <- "chile2017.rds"
 
-```
-[1] "/tmp/RtmpLdDUa5/CHILE2017.rds"
+if (!file.exists(fout)) {
+  chile2017 <- read_redatam("CP2017CHL/BaseOrg16/CPV2017-16.dicx")
+  saveRDS(chile2017, fout)
+} else {
+  chile2017 <- readRDS(fout)
+}
 ```
 
 One of the many possibilities with this census is to obtain the number of houses
@@ -47,8 +76,6 @@ municipality. This can be done with `dplyr`:
 
 ```{r, eval = FALSE}
 library(dplyr)
-
-chile2017 <- readRDS("/tmp/RtmpLdDUa5/CHILE2017.rds")
 
 overcrowding <- chile2017$comuna %>%
   select(ncomuna, comuna_ref_id) %>%
