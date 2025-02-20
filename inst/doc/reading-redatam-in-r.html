@@ -356,6 +356,10 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 
 
+<p>Please read our article for the full context of this project (Open Access):</p>
+<blockquote>
+<p>Vargas Sepúlveda, Mauricio and Barkai, Lital. 2025. “The REDATAM format and its challenges for data access and information creation in public policy.” <em>Data &amp; Policy</em> 7 (January): e18. <a href="https://dx.doi.org/10.1017/dap.2025.4">https://dx.doi.org/10.1017/dap.2025.4</a>.</p>
+</blockquote>
 <p>We start by downloading the Chilean Census 2017 from ECLAC website (link valid as of 2024-10-01):</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>url &lt;-<span class="st"> &quot;https://redatam.org/cdr/descargas/censos/poblacion/CP2017CHL.zip&quot;</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>zip &lt;-<span class="st"> &quot;CP2017CHL.zip&quot;</span></span>
@@ -438,7 +442,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true"></a></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true"></a>overcrowding <span class="op">%&gt;%</span></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true"></a><span class="st">  </span><span class="kw">filter</span>(comuna <span class="op">==</span><span class="st"> &quot;LA PINTANA&quot;</span>)</span></code></pre></div>
-<pre><code># A tibble: 4 × 3
+<pre><code># A tibble: 4 x 3
 # Groups:   comuna, overcrowding_discrete [4]
   comuna   overcrowding_discrete     n
   &lt;fct&gt;    &lt;chr&gt;                 &lt;int&gt;
@@ -447,7 +451,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 3 VITACURA Mean                    174
 4 VITACURA No Overcrowding       26752
 
-# A tibble: 4 × 3
+# A tibble: 4 x 3
 # Groups:   comuna, overcrowding_discrete [4]
   comuna     overcrowding_discrete     n
   &lt;fct&gt;      &lt;chr&gt;                 &lt;int&gt;

@@ -1,16 +1,16 @@
-//  replaces DataBlock.cs
 #ifndef REDATAMLIB_FUZZYENTITYPARSER_HPP
 #define REDATAMLIB_FUZZYENTITYPARSER_HPP
-
-#include <string>
-#include <unordered_map>
-#include <utility> //  std::pair
-#include <vector>
 
 #include "ByteArrayReader.hpp"
 #include "Entity.hpp"
 
+#include <string>
+#include <unordered_map>
+#include <utility> // pair
+#include <vector>
+
 namespace RedatamLib {
+
 using std::pair;
 using std::string;
 using std::unordered_map;
@@ -19,7 +19,7 @@ using std::vector;
 class FuzzyEntityParser {
 public:
   //  throws std::ios_base::failure if fails to open file
-  FuzzyEntityParser(const string &filePath);
+  explicit FuzzyEntityParser(const string &filePath);
   ~FuzzyEntityParser() = default;
 
   FuzzyEntityParser(const FuzzyEntityParser &) = delete;

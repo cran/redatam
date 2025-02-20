@@ -1,14 +1,7 @@
 #ifndef REDATAMLIB_XMLPARSER_HPP
 #define REDATAMLIB_XMLPARSER_HPP
 
-#include <iostream>
-#include <memory> //  std::shared_ptr
-#include <string>
-#include <utility> //  std::pair
-#include <vector>
-
 #include "Entity.hpp"
-#include "Variable.hpp"
 #include "pugixml.hpp"
 
 namespace RedatamLib {
