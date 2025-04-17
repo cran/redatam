@@ -1,12 +1,12 @@
-060a87f39ff1f4b7d15a2b56f4f62095 *DESCRIPTION
+6d8a04ca6321e6adca4d090cbc34bd28 *DESCRIPTION
 78461a13bf0753e27f4cf1aafc310d55 *NAMESPACE
-4ba377efab0f70a279fcc715e7e396e2 *NEWS.md
+a6a98cb041425daacdf62bc7168dec9f *NEWS.md
 b345cd6517d550c48ea0ce46358462a2 *R/cpp11.R
-5f43d8d92f17da40106604b35b142c9e *R/read_redatam.R
+2a33803fa34b301faea15f8e67059e74 *R/read_redatam.R
 7551eccf2bf9556c8cba5f18e34989dd *R/redatam-package.R
 e15922b75b2a1863a3f0c5c9bf113ddf *R/utils.R
-76161b65639451c966be75488458b3c3 *build/partial.rdb
-6d56186c8dc654b4395d9b862a360d2c *build/vignette.rds
+4454e632feb75ce4f508807d50b3b12f *build/partial.rdb
+bf369a9a55b1a31c61f471b62bb1c1e4 *build/vignette.rds
 bc7baead3b6080f04dc81efd2fe1ff39 *cleanup
 ec2e08a17d7fc18d93b4516e272e1438 *configure
 d41d8cd98f00b204e9800998ecf8427e *configure.win
@@ -23,7 +23,7 @@ ad3795874eeafc4c7d8fac3723493fa8 *man/redatam-package.Rd
 9edac842449ecd5edd6b85d7961563fd *src/Makevars.win
 a1e6fd25040240a5d674e2e3cb134ab4 *src/cpp11.cpp
 aac96dffc456d90d5db8d93534c097cf *src/main.cpp
-edfffc16608b4960c668e0a56b40fc71 *src/redatamlib/database/RedatamDatabase.cpp
+0ea2b9e5a06c6fae4897b715e2746388 *src/redatamlib/database/RedatamDatabase.cpp
 cca9d2d9ac2473fa63a86e8b635c3915 *src/redatamlib/database/RedatamDatabase.hpp
 330a53b297bfb19a0e9f6e4ea16f5e6a *src/redatamlib/entities/Entity.cpp
 94bf56f03893e4981df962c575a8a770 *src/redatamlib/entities/Entity.hpp
@@ -49,5 +49,5 @@ be8e3b2ad411065887a9e0e222b5c2d7 *src/vendor/pugiconfig.hpp
 5b2a0f7e0246809f9685368b97a002c8 *src/vendor/pugixml.cpp
 222ac2cb8b4a741ef42d6f1c7fe64710 *src/vendor/pugixml.hpp
 5e109cbfe36e7f0680206bbb46c148cb *tests/testthat.R
-b795ba3e8d96a8fe2ecb411548bd8cb9 *tests/testthat/test-uruguay.R
+3e4bf120916c63b609817cfb5e4db9b1 *tests/testthat/test-uruguay.R
 ac689cfbe7a577d41e1d4212a05a526b *vignettes/reading-redatam-in-r.Rmd
