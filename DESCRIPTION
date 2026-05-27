@@ -1,7 +1,7 @@
 Package: redatam
 Type: Package
 Title: Import 'REDATAM' Files
-Version: 2.3.0
+Version: 2.3.1
 Authors@R: c(
     person(
         given = "Mauricio",
@@ -42,7 +42,7 @@ VignetteBuilder: knitr
 LinkingTo: cpp4r
 Config/testthat/edition: 3
 Config/roxygen2/version: 8.0.0
-Packaged: 2026-05-17 15:47:45 UTC; pacha
+Packaged: 2026-05-27 16:35:28 UTC; pacha
 Author: Mauricio Vargas Sepulveda [aut, cre] (ORCID:
     <https://orcid.org/0000-0003-1017-7574>),
   Lital Barkai [aut],
@@ -51,4 +51,4 @@ Author: Mauricio Vargas Sepulveda [aut, cre] (ORCID:
   Oriental Republic of Uruguay [dtc] (Aggregated census data from 2011)
 Maintainer: Mauricio Vargas Sepulveda <m.vargas.sepulveda@gmail.com>
 Repository: CRAN
-Date/Publication: 2026-05-17 16:20:02 UTC
+Date/Publication: 2026-05-27 17:20:02 UTC

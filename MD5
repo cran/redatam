@@ -1,6 +1,6 @@
-a3655d2800ad320931b98986766edece *DESCRIPTION
+707320c0f5f64822369a06ee932f06a7 *DESCRIPTION
 78461a13bf0753e27f4cf1aafc310d55 *NAMESPACE
-3723c1e344a37cfd68c7e4819099fd38 *NEWS.md
+b16ade4f96ea28c2c0fb68bbd8e77ded *NEWS.md
 768167c417c2dc3ce1c4dbd5c795771b *R/cpp4r.R
 4115321bbbbf0d30bd882526aac20cee *R/read_redatam.R
 7551eccf2bf9556c8cba5f18e34989dd *R/redatam-package.R
@@ -45,9 +45,9 @@ d56b78c51abde359f74b12a17ddc113b *src/redatamlib/readers/XMLParser.cpp
 699fa5631f336ffb021a5fbcedadda70 *src/redatamlib/readers/XMLParser.hpp
 aaa576c2d5ff5ef3483cf087db6303aa *src/redatamlib/utils/utils.cpp
 4f2db641932178b1cb94749a45ba0159 *src/redatamlib/utils/utils.hpp
-2f8630d7fb5b83e213d68e2b8e36c9cb *src/vendor/pugiconfig.hpp
-544238081f0c24e6c73a94a3e0c83191 *src/vendor/pugixml.cpp
-ba192ed496be3d6fb3efe1413c87e78a *src/vendor/pugixml.hpp
+7676ddb8c0cd838c4e4afa281e1aa12a *src/vendor/pugiconfig.hpp
+b1fac7d0b64e2f1561d43ff5336bedcd *src/vendor/pugixml.cpp
+f3b71f3721f2e23b8ec849ba65eeb29d *src/vendor/pugixml.hpp
 5e109cbfe36e7f0680206bbb46c148cb *tests/testthat.R
 3a1ecd4acd196d5a8ce0ff44d34b3c12 *tests/testthat/test-uruguay.R
 b4da78e3a73ecb533e5a6dd2402abd76 *vignettes/reading-redatam-in-r.Rmd
